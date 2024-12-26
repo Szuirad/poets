@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .poem-container {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .new-poem-btn {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    padding: 10px 32px;
+    border: 1px solid #e0e0e0;
+    font-size: 26px;
+    outline: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    text-decoration: none;
+    color: #1e1e1e
+  }
+  .new-poem-btn:hover {
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  }
+  .new-poem-btn:active {
+    position: relative;
+    top: 1px;
+  }
+  .poems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .poem {
+    background-color: #f0c806;
+    border-radius: 8px;
+    width: 280px;
+    margin: 0 10px 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1e1e1e
+  }
+  
+  .poem .poem-body {
+    outline: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    padding: 10px 16px 16px;
+  }
+  .poems .poem:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .single-poem .poem {
+    margin: 0;
+    width: 100%;
+  }
+  .single-poem .poem .poem-body {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 20px;
+  }
+  .single-poem .poem .poem-body::placeholder {
+    color: #111111
+  }
+  .poem .poem-buttons {
+    opacity: 0;
+  }
+  .poem:hover .poem-buttons{
+    opacity: 1;
+  }
+  .poem-buttons {
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+  }
+  
+  .poem-buttons .poem-cancel-button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .poem-buttons .poem-cancel-button:hover {
+    background-color: #ffffff;
+  }
+  
+  .poem-buttons .poem-submit-button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #452900;
+    border: 1px solid #212000;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .poem-buttons .poem-submit-button:hover {
+    background-color: #704300;
+  }
+  
+  .poem-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .poem-buttons .poem-edit-button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #006bd6;
+    border: 1px solid #0059b3;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .poem-buttons .poem-edit-button:hover {
+    background-color: #0059b3;
+  }
+  
+  
+  .poem-buttons .poem-delete-button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #c93f3f;
+    border: 1px solid #a82f2f;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .poem-buttons .poem-delete-button:hover {
+    background-color: #a82f2f;
+  }
+  .poem-date {
+    margin-top: 20px;
+    font-size: 13px;
+    font-style: italic;
+    color: rgb(92, 92, 92);
+  }
+  
+  .success-message {
+    padding: 15px 25px;
+    background-color: rgb(0, 165, 44);
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  .poem-body-show {
+    background-color: #f0c806;
+    border-radius: 8px;
+    width: 1000px;
+    margin: 0 10px 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1e1e1e;
+    outline: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    padding: 10px 16px 16px;
+  }
